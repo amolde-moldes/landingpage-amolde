@@ -266,7 +266,14 @@
       align-items: center;
       justify-content: center;
       margin: 0 auto 1.5rem;
-      font-size: 1.5rem;
+      /* Removido font-size para ícones SVG */
+    }
+
+    /* Estilo para ícones SVG */
+    .benefit-icon svg {
+      width: 28px;
+      height: 28px;
+      fill: white;
     }
 
     .benefit-title {
@@ -347,7 +354,7 @@
 
     .product-image img {
       width: 100%;
-      height: 280px;
+      height: 700px;
       object-fit: cover;
       transition: transform 0.4s ease;
     }
@@ -523,8 +530,8 @@
   <!-- Header Editorial -->
   <div class="header-wrapper">
     <div class="logo-section">
-      <div style="width:100%;text-align:center;padding:5rem 0 4rem 0;background:#a88b9b;">
-        <img src="../../AMOLDE/BACK UP IDENTIDADE VISUAL/AMOLDE TRANSP 300DPIS.png" alt="Logo Amolde com transparência" style="max-width:300px;width:80%;height:auto;border-radius:12px;background:#a88b9b;" />
+      <div style="width:100%;text-align:center;padding:2rem 0 1.6rem 0;background:#a88b9b;">
+        <img src="../../AMOLDE/BACK UP IDENTIDADE VISUAL/amolde_capa_app.png" alt="Logo Amolde capa app" style="max-width:900px;width:80%;height:auto;background:#a88b9b;" />
       </div>
     </div>
 
@@ -534,11 +541,14 @@
           <h1 class="display-font">Moldes Profissionais de Moda Íntima</h1>
           <p>Transforme sua paixão pela costura em um negócio lucrativo. Moldes testados, certificados ABNT, com ficha técnica completa. Prontos para você produzir e vender.</p>
           <a href="https://www.amolde.com.br/category/all-products" class="cta-primary">
-            ✨ Comprar Moldes Agora
+            <svg style="width: 20px; height: 20px; fill: white; margin-right: 8px;" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 7h-3V6a4 4 0 0 0-8 0v1H5a1 1 0 0 0-1 1v11a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V8a1 1 0 0 0-1-1zM10 6a2 2 0 0 1 4 0v1h-4V6zm8 13a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V9h2v1a1 1 0 0 0 2 0V9h4v1a1 1 0 0 0 2 0V9h2v10z"/>
+            </svg>
+            Comprar Moldes Agora
           </a>
         </div>
         <div class="hero-visual">
-          <img src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Moldes de moda íntima profissionais" />
+          <img src="../../AMOLDE/BACK UP IDENTIDADE VISUAL/FOTOS PARA INSTAGRAM/Gemini_Generated_Image_uymgiruymgiruymg.png" alt="Moda íntima Amolde" />
         </div>
       </div>
     </div>
@@ -554,19 +564,34 @@
 
       <div class="benefits-grid">
         <div class="benefit-card">
-          <div class="benefit-icon">📏</div>
+          <div class="benefit-icon">
+            <!-- Ícone de Régua SVG - Padrão ABNT -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3 17h18c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2H3c-1.1 0-2 .9-2 2v6c0 1.1.9 2 2 2zm0-8h18v6H3V9zm2 1v1h2v-1H5zm4 0v1h2v-1H9zm4 0v1h2v-1h-2zm4 0v1h2v-1h-2z"/>
+            </svg>
+          </div>
           <h3 class="benefit-title">Padrão ABNT Certificado</h3>
           <p class="benefit-text">Tamanhos P ao G seguindo rigorosamente a tabela da Associação Brasileira de Normas Técnicas.</p>
         </div>
 
         <div class="benefit-card">
-          <div class="benefit-icon">✅</div>
+          <div class="benefit-icon">
+            <!-- Ícone de Check SVG - Testados & Aprovados -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+          </div>
           <h3 class="benefit-title">Testados & Aprovados</h3>
           <p class="benefit-text">Cada molde passa por rigorosos testes e validações antes de chegar até você.</p>
         </div>
 
         <div class="benefit-card">
-          <div class="benefit-icon">📋</div>
+          <div class="benefit-icon">
+            <!-- Ícone de Clipboard SVG - Ficha Técnica -->
+            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm0 4c1.66 0 3 1.34 3 3s-1.34 3-3 3-3-1.34-3-3 1.34-3 3-3zm6 12H6v-1.4c0-2 4-3.1 6-3.1s6 1.1 6 3.1V19z"/>
+            </svg>
+          </div>
           <h3 class="benefit-title">Ficha Técnica Completa</h3>
           <p class="benefit-text">Instruções detalhadas de corte e costura para um resultado profissional garantido.</p>
         </div>
@@ -582,8 +607,8 @@
         <p class="section-subtitle">Descubra a simplicidade e qualidade dos moldes Amolde</p>
       </div>
       
-      <div class="video-wrapper">
-        <iframe src="https://www.youtube.com/embed/F4fSCvuyE_E" allowfullscreen></iframe>
+      <div class="video-wrapper" style="position:relative;width:100%;max-width:360px;margin:0 auto;aspect-ratio:9/16;">
+        <iframe src="https://www.instagram.com/p/DDpqBpQz-WQ/embed" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;border:none;overflow:hidden;"></iframe>
       </div>
     </div>
   </section>
@@ -599,25 +624,25 @@
       <div class="products-grid">
         <div class="product-card">
           <div class="product-image">
-            <img src="https://cdn.awsli.com.br/600x450/2822/2822615/produto/244243545/body-jade-1-506a1f9ac1.jpg" alt="Body Jade" />
+            <img src="../../AMOLDE/MOLDES/BODYS/BODY JADE/FOTOS BODY JADE/SELAÇÃO/EDIT/IMG_5739_EDIT.jpg" alt="Body Jade" />
           </div>
           <div class="product-info">
             <h3 class="product-title">Body Jade</h3>
             <p class="product-description">Modelagem sofisticada e confortável, perfeita para revenda. Inclui molde impresso em 4 tamanhos + ficha técnica detalhada.</p>
             <div class="product-price">R$ 89,00</div>
-            <a href="https://www.amolde.com.br/product/body-jade" class="cta-secondary">Ver Detalhes</a>
+            <a href="https://www.amolde.com.br/product-page/body-jade" class="cta-secondary">Ver Detalhes</a>
           </div>
         </div>
 
         <div class="product-card">
           <div class="product-image">
-            <img src="https://cdn.awsli.com.br/600x450/2822/2822615/produto/244179393/calcinha-biquini-1-08a2accc10.jpg" alt="Calcinha Biquíni" />
+            <img src="../../AMOLDE/MOLDES/CALCINHAS/CALCINHA BIQUINI/CALCINHA BIQUINI BASICA_VITORIA/IMG_4569_ed.jpg" alt="Calcinha Biquíni" />
           </div>
           <div class="product-info">
             <h3 class="product-title">Calcinha Biquíni</h3>
             <p class="product-description">Modelagem clássica e confortável seguindo padronagem ABNT. Ideal para quem está começando na confecção.</p>
             <div class="product-price">R$ 49,90</div>
-            <a href="https://www.amolde.com.br/product/calcinha-biquini" class="cta-secondary">Ver Detalhes</a>
+            <a href="https://www.amolde.com.br/biquini" class="cta-secondary">Ver Detalhes</a>
           </div>
         </div>
       </div>
@@ -652,7 +677,7 @@
       <div class="footer-text">
         © 2025 Amolde - Moldes Profissionais de Moda Íntima<br>
         Envio via Correios para todo o Brasil<br><br>
-        <a href="https://www.amolde.com.br/politica-de-troca" class="footer-links">Política de Troca</a> | 
+        <a href="https://www.amolde.com.br/politica-de-troca-e-devolucao-amolde" class="footer-links">Política de Troca</a> | 
         <a href="https://www.amolde.com.br/contato" class="footer-links">Contato</a>
       </div>
     </div>
