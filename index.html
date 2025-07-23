@@ -523,10 +523,6 @@
         max-width: 336px;  /* Aumentado em 20% (280px * 1.2) */
         width: 90%;
       }
-
-      .logo-section > div {
-        padding: 4.55rem 0 3.64rem 0 !important; /* Mantém padding superior, reduz inferior em 20% */
-      }
       
       .hero-visual {
         order: -1;
@@ -575,7 +571,7 @@
   <!-- Header Editorial -->
   <div class="header-wrapper">
     <div class="logo-section">
-      <div style="width:100%;text-align:center;padding:4.55rem 0 4.55rem 0;background:#a88b9b;">
+      <div id="logoContainer" style="width:100%;text-align:center;padding:4.55rem 0 4.55rem 0;background:#a88b9b;">
         <img src="logo-amolde-landing.png" alt="Logo Amolde" style="max-width:720px;width:70.4%;height:auto;background:#a88b9b;" />
       </div>
     </div>
@@ -772,6 +768,20 @@
     document.querySelectorAll('.benefit-card, .product-card, .testimonial-card').forEach(el => {
       observer.observe(el);
     });
+
+    // Ajuste do padding para mobile
+    function adjustMobilePadding() {
+      const logoContainer = document.getElementById('logoContainer');
+      if (window.innerWidth <= 768) {
+        logoContainer.style.padding = '4.55rem 0 3.64rem 0'; // Padding reduzido em 20% na base para mobile
+      } else {
+        logoContainer.style.padding = '4.55rem 0 4.55rem 0'; // Padding normal para desktop
+      }
+    }
+
+    // Executa no carregamento e quando a tela é redimensionada
+    window.addEventListener('load', adjustMobilePadding);
+    window.addEventListener('resize', adjustMobilePadding);
   </script>
 </body>
 </html>
